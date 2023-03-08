@@ -10,46 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: MENU_MAIN
+  m_Name: MENU_PCCamera
   m_EditorClassIdentifier: 
   controls:
-  - name: Modes
+  - name: Normal
     icon: {fileID: 0}
-    type: 103
-    parameter:
-      name: 
-    value: 1
-    style: 0
-    subMenu: {fileID: 11400000, guid: 817758d9b79db304b99ed77d416ff2ba, type: 2}
-    subParameters: []
-    labels: []
-  - name: Camera Controls
-    icon: {fileID: 0}
-    type: 103
-    parameter:
-      name: 
-    value: 1
-    style: 0
-    subMenu: {fileID: 11400000, guid: dab45a57fccfad34180952c96d008fd2, type: 2}
-    subParameters: []
-    labels: []
-  - name: Recall
-    icon: {fileID: 2800000, guid: b2618028d95327941a9928cf5c4b41d4, type: 3}
     type: 102
     parameter:
-      name: Drone/Core/Mode
-    value: 0
+      name: Drone/Extra/PCCamera
+    value: 1
     style: 0
     subMenu: {fileID: 0}
     subParameters: []
     labels: []
-  - name: PC SYNC Camera
+  - name: "2D 360\xB0"
     icon: {fileID: 0}
-    type: 103
+    type: 102
     parameter:
-      name: 
-    value: 1
+      name: Drone/Extra/PCCamera
+    value: 2
     style: 0
-    subMenu: {fileID: 11400000, guid: 1b04312ee497d7d4ea09837cbe05488e, type: 2}
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "3D 360\xB0"
+    icon: {fileID: 0}
+    type: 102
+    parameter:
+      name: Drone/Extra/PCCamera
+    value: 3
+    style: 0
+    subMenu: {fileID: 0}
     subParameters: []
     labels: []

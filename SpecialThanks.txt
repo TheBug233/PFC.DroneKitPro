@@ -27,6 +27,10 @@ For the world constraint setup that's used to anchor the drone in worldspace.
 For her never ending support an enthusiasm for my project, the consistant bug reports and assistance in helping me fix most if not all issues you encountered.
 The 2.0 project would never have even began if it wasn't for her.
 
+- 欧阳大鸽子(bilibili)
+His modified version adds a feature that many want:
+Such as speed adjustment, PC sync camera, panoramic camera, double joystick remote control...
+ 
 There's many more people I'd like to thank but over time i've either forgotten to record their names or forgotten their names as they've come and gone from the discord.
 But I couldn't have done it without all the support from the people in my discord server. 
 

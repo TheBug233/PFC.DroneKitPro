@@ -45,3 +45,31 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 0
+  - name: Drone/Extra/PCCamera
+    valueType: 0
+    saved: 1
+    defaultValue: 0
+  - name: Drone/Core/Joystick/RLRR
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: Drone/Core/Joystick/LR
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: Drone/Core/Joystick/FB
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: Drone/Core/Joystick/UD
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: Drone/Core/Speed/Rotate
+    valueType: 1
+    saved: 1
+    defaultValue: 0.92
+  - name: Drone/Core/Speed/Move
+    valueType: 1
+    saved: 1
+    defaultValue: 0
