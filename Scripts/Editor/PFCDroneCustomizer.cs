@@ -72,7 +72,7 @@ namespace PFCTools.Drone {
                 if (customizer.currentCustomizerWindow == CustomizerWindows.ModeSelect) {
                     PageHeader(new string[] { "Mode Select", "1/3" });
 
-                    GUILayout.Label("Welcome to the <b>PFC Drone Kit</b> Installation Wizard\n" +
+                    GUILayout.Label("Welcome to the <b>PFC Drone Kit Pro</b> Installation Wizard\n" +
                         "Would you like to run the installer in Simple mode or Advanced mode?\n", label);
                     GUILayout.BeginHorizontal();
                     GUILayout.BeginVertical();
@@ -529,7 +529,7 @@ namespace PFCTools.Drone {
                     }
                 }
                 GUILayout.FlexibleSpace();
-                if (GUILayout.Button("Join our Discord!", EditorStyles.toolbarButton)) {
+                if (GUILayout.Button("Join my Discord!", EditorStyles.toolbarButton)) {
                     Application.OpenURL("https://discord.gg/FJKB768");
                 }
                 GUILayout.EndHorizontal();

@@ -13,16 +13,6 @@ MonoBehaviour:
   m_Name: MENU_CAMERA
   m_EditorClassIdentifier: 
   controls:
-  - name: Hud
-    icon: {fileID: 2800000, guid: 21c35439f7f5abd4f844e42bfc04af88, type: 3}
-    type: 102
-    parameter:
-      name: Drone/Extra/Hud
-    value: 1
-    style: 0
-    subMenu: {fileID: 0}
-    subParameters: []
-    labels: []
   - name: Gimbal Control
     icon: {fileID: 2800000, guid: 8075cce073bb4d94cb467c5a1801f866, type: 3}
     type: 201

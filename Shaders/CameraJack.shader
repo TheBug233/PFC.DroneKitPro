@@ -6,12 +6,11 @@
     }
     SubShader
     {
-        Tags { "QUEUE"="Overlay+1000" "RenderType"="Opaque" }
         LOD 100
 
         Pass
         {
-			ZTest Always
+			//ZTest Always
 			//Cull OFF
             CGPROGRAM
             #pragma vertex vert
@@ -32,7 +31,11 @@
                 float2 uv : TEXCOORD0;
                 UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
+                float distance : TEXCOORD1;
             };
+
+            float _VRChatCameraMode;
+            float _VRChatMirrorMode;
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
@@ -50,26 +53,26 @@
 				return !isVR() && _ScreenParams.y == 1084;
 			}
 
-			//bool isPanorama() {
-				// Crude method
-				// FOV=90=camproj=[1][1]
-				//return unity_CameraProjection[1][1] == 1 && _ScreenParams.x == 1075 && _ScreenParams.y == 1025;
-			//}
 			bool IsInMirror(){
-				return unity_CameraProjection[2][0] != 0.f || unity_CameraProjection[2][1] != 0.f;
-			}
+                return _VRChatMirrorMode != 0;
+            }
+
+            bool JackView(){
+                return _VRChatCameraMode != 0;
+            }
 
             v2f vert (appdata v)
             {
-                v2f o;
+                v2f o; 
                 o.vertex = UnityObjectToClipPos(v.vertex);
+                o.distance = distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, float4(0,0,0,1)));
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
-				if (IsInMirror() || isDroneCamera()) { o.vertex=1; }
-				else if (!isVR()) {
-					o.vertex = float4(2*v.uv-1,1,1);
-					o.vertex.y *= -1;
-				}
+                if (IsInMirror() || isDroneCamera()) { o.vertex=1; }
+                else if (JackView() && o.distance < 1) {
+                    o.vertex = float4(2*v.uv-1,1,1);
+                    o.vertex.y *= -1;
+                }
                 return o;
             }
 
@@ -77,7 +80,6 @@
             {
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
-
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
