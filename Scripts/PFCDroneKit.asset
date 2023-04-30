@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c72fed0943b794eab6c959d76a1bd1, type: 3}
   m_Name: PFCDroneKit
   m_EditorClassIdentifier: 
-  nextVersion: 3.3.0.7
-  _version: 3.3.0.7
+  nextVersion: 3.3.0.72
+  _version: 3.3.0.72
   _latestVersion: 3.3.0.5
-  owner: brandonvdongen
-  repo: PFC.DroneKit
+  owner: TheBug233
+  repo: PFC.DroneKitPro
   token: 
   FilePaths:
   - Assets/PFCTools
   - Assets/PFCDroneKit
-  changelog: 3.3.0.7 - Removed gesture manager. oops.
-  packageUrl: https://github.com/brandonvdongen/PFC.DroneKit/releases/download/3.3.0.5/PFCDroneKit.unitypackage
+  changelog: 3.3.0.72 - Fix the problem that the automatic installer cannot find the corresponding resources.
+  packageUrl: https://github.com/TheBug233/PFC.DroneKitPro/releases/download/3.3.0.72/PFCDroneKit.unitypackage

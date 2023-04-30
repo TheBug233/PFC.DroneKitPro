@@ -18,7 +18,7 @@ namespace PFCTools.Drone {
 
         public PFCDroneInstaller customizer = null;
         public static async Task<EditorWindow> OpenEditor(PFCDroneInstaller targetCustomizer) {
-            PFCDroneCustomizer window = EditorWindow.GetWindow(typeof(PFCDroneCustomizer), false, "PFCDroneCustomizer") as PFCDroneCustomizer;
+            PFCDroneCustomizer window = EditorWindow.GetWindow(typeof(PFCDroneCustomizer), false, "PFCDroneProCustomizer") as PFCDroneCustomizer;
             window.minSize = new Vector2(400, 400);
             window.customizer = targetCustomizer;
             await window.customizer.versionManager.GetLatestPackageVersion();
@@ -345,7 +345,7 @@ namespace PFCTools.Drone {
                         if (GUILayout.Button("Finish")) {
 
                             customizer.currentCustomizerWindow = CustomizerWindows.Customize;
-                            customizer.name = "PFCDroneKit Customizer [" + customizer.Prefab.transform.parent.name + "]";
+                            customizer.name = "PFCDroneKitPro Customizer [" + customizer.Prefab.transform.parent.name + "]";
                         }
                     } else {
                         GUILayout.Label("<b>Close window</b>:\nOnce everything is removed you can close the menu.", label);
@@ -529,7 +529,7 @@ namespace PFCTools.Drone {
                     }
                 }
                 GUILayout.FlexibleSpace();
-                if (GUILayout.Button("Join my Discord!", EditorStyles.toolbarButton)) {
+                if (GUILayout.Button("Join our Discord!", EditorStyles.toolbarButton)) {
                     Application.OpenURL("https://discord.gg/FJKB768");
                 }
                 GUILayout.EndHorizontal();

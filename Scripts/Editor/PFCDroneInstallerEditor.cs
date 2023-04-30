@@ -23,7 +23,7 @@ namespace PFCTools.Drone {
                     "it just needs to be somewhere on the model you want to intall it on.)\n\n" +
                     "Please drag the prefab anywhere onto the model you want to install it on and then click back on this window to continue.");
                 } else {
-                    GUILayout.TextArea("The PFCDrone Installer is designed to make installation of the PFCDronekit as easy as possible. \nTo begin the installation just press the button below.");
+                    GUILayout.TextArea("The PFCDronePro Installer is designed to make installation of the PFCDronekitPro as easy as possible. \nTo begin the installation just press the button below.");
                     buttonText = "Open Drone Installer";
                 }
             } else if (installer.currentCustomizerWindow != CustomizerWindows.Customize) {
