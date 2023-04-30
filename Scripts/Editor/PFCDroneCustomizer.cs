@@ -523,13 +523,13 @@ namespace PFCTools.Drone {
                         if (!AssetDatabase.IsValidFolder("Assets/Updates")) {
                             AssetDatabase.CreateFolder("Assets", "Updates");
                         }
-                        webclient.DownloadFile(customizer.versionManager.packageUrl, "Assets/Updates/PFCDroneKitProUpdate.unitypackage");
+                        webclient.DownloadFile(customizer.versionManager.packageUrl, "Assets/Updates/PFCDroneKitUpdate.unitypackage");
                         AssetDatabase.Refresh();
-                        AssetDatabase.ImportPackage("Assets/Updates/PFCDroneKitUpdatePro.unitypackage", true);
+                        AssetDatabase.ImportPackage("Assets/Updates/PFCDroneKitUpdate.unitypackage", true);
                     }
                 }
                 GUILayout.FlexibleSpace();
-                if (GUILayout.Button("Join our Discord!", EditorStyles.toolbarButton)) {
+                if (GUILayout.Button("Join my Discord!", EditorStyles.toolbarButton)) {
                     Application.OpenURL("https://discord.gg/FJKB768");
                 }
                 GUILayout.EndHorizontal();

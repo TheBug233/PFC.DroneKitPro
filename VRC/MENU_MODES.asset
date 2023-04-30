@@ -80,7 +80,7 @@ MonoBehaviour:
       name: 
     value: 1
     style: 0
-    subMenu: {fileID: 11400000, guid: 26e53ef18465e3e49904dcaa2a761107, type: 2}
+    subMenu: {fileID: 11400000, guid: 81063cd0b3b9dc949b785a50d3c3ff06, type: 2}
     subParameters: []
     labels: []
   - name: Double Joystick Remote
@@ -90,6 +90,6 @@ MonoBehaviour:
       name: Drone/Core/Mode
     value: 6
     style: 0
-    subMenu: {fileID: 11400000, guid: 56edd48e451e3e945a80f217cc38e1a4, type: 2}
+    subMenu: {fileID: 11400000, guid: 58a478a8ac6dd674ab68ff9d2873ea49, type: 2}
     subParameters: []
     labels: []

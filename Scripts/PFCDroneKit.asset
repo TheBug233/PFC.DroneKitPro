@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: PFCDroneKit
   m_EditorClassIdentifier: 
   nextVersion: 3.3.0.7
-  _version: 3.3.0.71
+  _version: 3.3.0.7
   _latestVersion: 3.3.0.5
-  owner: TheBug233
-  repo: PFC.DroneKitPro
+  owner: brandonvdongen
+  repo: PFC.DroneKit
   token: 
   FilePaths:
   - Assets/PFCTools
   - Assets/PFCDroneKit
   changelog: 3.3.0.7 - Removed gesture manager. oops.
-  packageUrl: https://github.com/TheBug233/PFC.DroneKitPro/releases/download/3.3.0.71/PFCDroneKit.unitypackage
+  packageUrl: https://github.com/brandonvdongen/PFC.DroneKit/releases/download/3.3.0.5/PFCDroneKit.unitypackage
